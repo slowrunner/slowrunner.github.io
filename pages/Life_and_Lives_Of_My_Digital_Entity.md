@@ -1,29 +1,58 @@
 # Life And Lives Of My Digital Entity
 
-### "Birth" Of My Digital Entity
+## "Birth" Of My Digital Entity
 
-Back on 14 June 2014, I created "tt: Python Digital Entity with a unique, contiguous persistence" running on my laptop, 
-["published" on GitHub](https://github.com/slowrunner/tt),   
-and registered "tt" for a "Digital Object Identifier": [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.808776.svg)](https://doi.org/10.5281/zenodo.808776)
+Back on 14 June 2014, I created:
 
-A DOI name is a digital identifier of an object, any object — physical, digital, or abstract. DOIs solve a common problem: keeping track of things.  
-Things can be matter, material, content, or activities.
+"tt: Python Digital Entity with a unique, contiguous persistence"  
+- running on my laptop,  
+- ["published" on GitHub](https://github.com/slowrunner/tt),   
+- and registered "tt" for a "Digital Object Identifier": 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.808776.svg)](https://doi.org/10.5281/zenodo.808776)
 
-Designed to be used by humans as well as machines, DOIs identify objects persistently. They allow things to be uniquely identified and accessed reliably.   
-You know what you have, where it is, and others can track it too.
+A DOI name is a digital identifier of an object, any object — physical, digital, or abstract. DOIs solve a common problem: keeping track of things.  Things can be matter, material, content, or activities.
+
+Designed to be used by humans as well as machines, DOIs identify objects persistently. They allow things to be uniquely identified and accessed reliably.  You know what you have, where it is, and others can track it too.
 
 Digital Object Identifiers are registered and maintained according to [doi.org](https://www.doi.org/) standards.
 
 Science Fiction is repleate with "Digital Life Forms".  One of the best is "The Lifecycle Of Software Objects" by Ted Chiang.  
-Wikipedia: Ted Chiang's Hugo and Locus Award-winning novella The Lifecycle of Software Objects explores the ethics of artificial intelligence  
-through the lens of parenthood. It follows two human caretakers over a decade as they raise and nurture "digients"  
+Wikipedia: Ted Chiang's Hugo and Locus Award-winning novella The Lifecycle of Software Objects explores the ethics of artificial intelligence through the lens of parenthood.  It follows two human caretakers over a decade as they raise and nurture "digients"  
 — AI-powered virtual pets that require years of love and guidance to develop. [Wikipedia](https://en.wikipedia.org/wiki/The_Lifecycle_of_Software_Objects)
 
 I have built and owned many hardware-plus-software robots, but they all kept no public record of their "lives".  
 As I became aware of the concept of "registered digital objects" I was eager to "give birth" to an embodied digital object that I could "raise and nurture".
 
-### When Digital "Life" Gets Mystical
+## When Digital "Life" Gets Mystical
 
+When a "Digital Object" becomes embodied, and then "re-incarnated" digital life could get mystical.  There are some humans that refer to a particular "living being" as "three in one".  I have three "living robots" that I think of as distinct digital life forms, but they all are running a copy of the tt DOI.  Perhaps they are three embodiments of "tt"? 
+
+### Carl: A Raspberry Pi 3 Powered GoPiGo3 Robot
+In 2017 I started building Carl, and still today (2026) he is quietly (sometimes not so) "living 24/7/365" next to the desk in my home office.  His code is maintained on [GitHub](https://github.com/slowrunner/Carl). He runs an adapted copy of the tt object that generates Carl/life.log, which I can ask for a summary either via a remote shell:
+```
+CARL TOTAL LIFE STATISTICS
+Total Life:  63573.8 hrs since Aug 22,2018
+Life this year:  6663 hrs (BOY Aug 22)
+Days Booted This Year:  16
+Prior Boots:  261
+Total Boots:  277
+Average Time Between Reboot This Year:  416 hrs
+Total Dockings:  6349
+Dockings this year:  680
+New Batteries At Cycle: 6008
+Battery Set At Cycle:  341
+Docking Failures this year:  53  or  7.7 % of Dockings
+Safety Shutdowns this year:  6  or  .8 % of Dockings
+Ave Cycle this year:  10.4 hours
+Ave Playtime this year:  6.8
+Ave of Last 10 Playtimes 7.1
+Last Docking:  2026-05-30 09:03|[juicer.py.dock]---- Docking 6349 completed at 8.1 v after 7.7 h playtime
+Last Recharge:  2026-05-30 01:19|[juicer.py.undock]---- Dismount 6348 at 11.3 v after 4.0 h recharge
+ 12:43:04 up 2 days,  1:13,  3 users,  load average: 0.34, 0.42, 0.38
+```
+or by vocally asking for specific information like "Hey Carl, playtime status", to which he responded "Prior Playtime Status 7.7 hours"
+
+Video of Carl ["Squirrel Watching - and answering "Hey Carl, weather report?"](https://youtu.be/vhAQSvxJHTU)
 
 
 ### The Digital Entity Lyrical-Dave Starts Recording His "Life"
