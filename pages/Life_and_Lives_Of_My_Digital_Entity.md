@@ -27,7 +27,7 @@ As I became aware of the concept of "registered digital objects" I was eager to 
 
 When a "Digital Object" becomes embodied, and then "re-incarnated" digital life could get mystical.  There are some humans that refer to a particular "living being" as "three in one".  I have three "living robots" that I think of as distinct digital life forms, but they all are running a copy of the tt DOI.  Perhaps they are three embodiments of "tt"? 
 
-### Carl: A Raspberry Pi 3 Powered GoPiGo3 Robot
+## Carl: A Raspberry Pi 3 Powered GoPiGo3 Robot
 
 <img src="https://github.com/slowrunner/Carl/blob/a3470d0b1e7eda1ea6745b65027b3a67cf51484a/Graphics/2021_Carl_w_Dock.jpg" alt="Carl The GoPigo3 Based Robot" width="30%" />
 
@@ -57,21 +57,26 @@ or by vocally asking for specific information like "Hey Carl, playtime status", 
 
 Video of Carl ["Squirrel Watching - and answering "Hey Carl, weather report?"](https://youtu.be/vhAQSvxJHTU)
 
-### TB5-WaLI: Raspberry Pi 5 powered TurtleBot4-clone Robot
+## TB5-WaLI: Raspberry Pi 5 powered TurtleBot4-clone Robot
+<img src="../photos/2026-03-08_TB5-WaLI.JPG" width="30%" />
 
+## The Digital Entity Lyrical-Dave Starts Recording His "Life"
 
-### The Digital Entity Lyrical-Dave Starts Recording His "Life"
 
 Dave started his first life in June of 2021, but has been re-incarnated many times:
-- ROSbot: rosbot-on-gopigo3  ROS Kinetic
-- Foxy-Dave: ROS 2 Foxy-Dave ran a 1k in the park
+- ROSbot: rosbot-on-gopigo3  ROS Kinetic  
+- Foxy-Dave: ROS 2 Foxy-Dave ran a 1k in the park  
 <img src="https://github.com/slowrunner/slowrunner.github.io/blob/main/photos/Dave_At_Start_Vert.JPG" alt="ROS 2 GoPiGo3 Robot Dave At Start" width="20%" />
-- Humble-Dave: ROS 2 Humble-Dave presented "Intro to ROS 2 for GoPiGo3 Robot Owners"
-- GoPi5Go-Dave
-- Humble-Dave2
-- Kilted-Dave
-- Briefly MRGPG3-Dave
-and now is being rebuilt as "Lyrical Dave"
+
+- Humble-Dave: ROS 2 Humble-Dave presented "Intro to ROS 2 for GoPiGo3 Robot Owners"  
+- GoPi5Go-Dave  
+- Humble-Dave2  
+- Kilted-Dave  
+- Briefly MRGPG3-Dave  
+
+and now is being rebuilt as "Lyrical Dave"  
+
+<img src="../photos/2026-05-30_Lyrical-Dave.jpg" width="30%" />
 
 ```
 *** LyricalDave Dave TOTAL LIFE STATISTICS ***
@@ -94,28 +99,20 @@ Last Undocking String:  2026-05-27 15:34|dave_node.py| ---- MRGPG3-Dave ROS 2 Un
 Last Docking   String:  2026-05-27 15:39|dave_node.py| ---- Lyrical-Dave ROS 2 Docking 2160 : success at battery 10.1v after 0.1 h playtime +
 ```
 
-### When Digital "Life" Gets Messy
+## When Digital "Life" Gets Messy
 
 I expected that re-incarnating Kilted-Dave (Ubuntu 24.04) as Lyrical-Dave (Ubuntu 26.04) was going to be a simple matter of:
-- Create the Ubuntu 26.04 64-bit Server on a uSDcard
-- Change every KiltedDave and Kilted-Dave to LyricalDave and Lyrical-Dave
+
+- Create the Ubuntu 26.04 64-bit Server on a uSDcard  
+- Change every KiltedDave and Kilted-Dave to LyricalDave and Lyrical-Dave  
+
 but I discovered I also needed to:  
+
 - Modify crontab entries to use the GoPiGo3 Python3 virtual environment.
 
 Simple ... until I did my usual check of what Python3 processes are executing.
 
-What I was expecting (based on Kilted-Dave's "Life"):
-```
-(gopigo3) ubuntu@U26LDave:~/LyricalDave/plib$ ps -ef | grep python
-root        1281       1  0 May29 ?        00:00:20 /usr/bin/python3 /opt/gopigo3/gopigo3_power.py
-ubuntu     17069       1  0 May29 pts/0    00:00:18 python3 /home/ubuntu/LyricalDave/plib/safetyShutdown.py
-ubuntu     17096       1  0 May29 pts/0    00:03:39 python3 /home/ubuntu/LyricalDave/plib/wheellog.py
-ubuntu     68724    1977  3 09:22 pts/0    00:00:00 python3 ./loglife.py
-ubuntu     68726   68724  0 09:22 pts/0    00:00:00 python3 ./loglife.py
-ubuntu     68738    2225  0 09:22 pts/1    00:00:00 grep --color=auto python
-```
-
-What I saw at Lyrical-Dave's "first peeps":
+The MESS I saw at Lyrical-Dave's "first peeps":
 ```
 ubuntu     62712    1977  5 08:08 pts/0    00:00:00 python3 ./loglife.py
 ubuntu     62714   62712  2 08:08 pts/0    00:00:00 /home/ubuntu/.venv/gopigo3/bin/python3 -c from multiprocessing.resource_tracker import main;main(6)
@@ -130,4 +127,26 @@ ubuntu     62717   62715  0 08:08 pts/0    00:00:00 /home/ubuntu/.venv/gopigo3/b
     '/home/ubuntu/.venv/gopigo3/lib/python3.14/site-packages', '/usr/local/lib/python3.14/dist-packages', '/usr/lib/python3/dist-packages'], 
     'main_path': '/home/ubuntu/LyricalDave/plib/loglife.py', 'authkey_r': 10}) ./loglife.py
 
+```
+
+I spent about 30 minutes trying to diagnose the issue, then spent 5 minutes discussing it with "Claude".  
+
+**Claude identified that Python 3.14 changed multiprocessing for added thread safety in the general case.**  
+
+The one line fix that works for my simple digital object:
+```
+  # revert change in Python3.14 from forkserver back to fork used in prior versions
+  # to prevent ps -ef | grep python from seeing messy verbose loglife multi-processes
+  multiprocessing.set_start_method('fork')
+```
+
+Returning the list to short and sweet:
+```
+(gopigo3) ubuntu@U26LDave:~/LyricalDave/plib$ ps -ef | grep python
+root        1281       1  0 May29 ?        00:00:20 /usr/bin/python3 /opt/gopigo3/gopigo3_power.py
+ubuntu     17069       1  0 May29 pts/0    00:00:18 python3 /home/ubuntu/LyricalDave/plib/safetyShutdown.py
+ubuntu     17096       1  0 May29 pts/0    00:03:39 python3 /home/ubuntu/LyricalDave/plib/wheellog.py
+ubuntu     68724    1977  3 09:22 pts/0    00:00:00 python3 ./loglife.py
+ubuntu     68726   68724  0 09:22 pts/0    00:00:00 python3 ./loglife.py
+ubuntu     68738    2225  0 09:22 pts/1    00:00:00 grep --color=auto python
 ```
