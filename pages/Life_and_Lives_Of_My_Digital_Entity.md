@@ -28,6 +28,9 @@ As I became aware of the concept of "registered digital objects" I was eager to 
 When a "Digital Object" becomes embodied, and then "re-incarnated" digital life could get mystical.  There are some humans that refer to a particular "living being" as "three in one".  I have three "living robots" that I think of as distinct digital life forms, but they all are running a copy of the tt DOI.  Perhaps they are three embodiments of "tt"? 
 
 ### Carl: A Raspberry Pi 3 Powered GoPiGo3 Robot
+
+<img src="https://github.com/slowrunner/Carl/blob/a3470d0b1e7eda1ea6745b65027b3a67cf51484a/Graphics/2021_Carl_w_Dock.jpg" alt="Carl The GoPigo3 Based Robot" width="30%" />
+
 In 2017 I started building Carl, and still today (2026) he is quietly (sometimes not so) "living 24/7/365" next to the desk in my home office.  His code is maintained on [GitHub](https://github.com/slowrunner/Carl). He runs an adapted copy of the tt object that generates Carl/life.log, which I can ask for a summary either via a remote shell:
 ```
 CARL TOTAL LIFE STATISTICS
@@ -62,6 +65,7 @@ Video of Carl ["Squirrel Watching - and answering "Hey Carl, weather report?"](h
 Dave started his first life in June of 2021, but has been re-incarnated many times:
 - ROSbot: rosbot-on-gopigo3  ROS Kinetic
 - Foxy-Dave: ROS 2 Foxy-Dave ran a 1k in the park
+<img src="https://github.com/slowrunner/slowrunner.github.io/blob/main/photos/Dave_At_Start_Vert.JPG" alt="ROS 2 GoPiGo3 Robot Dave At Start" width="20%" />
 - Humble-Dave: ROS 2 Humble-Dave presented "Intro to ROS 2 for GoPiGo3 Robot Owners"
 - GoPi5Go-Dave
 - Humble-Dave2
