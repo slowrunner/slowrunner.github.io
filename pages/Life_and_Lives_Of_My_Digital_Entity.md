@@ -54,8 +54,21 @@ or by vocally asking for specific information like "Hey Carl, playtime status", 
 
 Video of Carl ["Squirrel Watching - and answering "Hey Carl, weather report?"](https://youtu.be/vhAQSvxJHTU)
 
+### TB5-WaLI: Raspberry Pi 5 powered TurtleBot4-clone Robot
+
 
 ### The Digital Entity Lyrical-Dave Starts Recording His "Life"
+
+Dave started his first life in June of 2021, but has been re-incarnated many times:
+- ROSbot: rosbot-on-gopigo3  ROS Kinetic
+- Foxy-Dave: ROS 2 Foxy-Dave ran a 1k in the park
+- Humble-Dave: ROS 2 Humble-Dave presented "Intro to ROS 2 for GoPiGo3 Robot Owners"
+- GoPi5Go-Dave
+- Humble-Dave2
+- Kilted-Dave
+- Briefly MRGPG3-Dave
+and now is being rebuilt as "Lyrical Dave"
+
 ```
 *** LyricalDave Dave TOTAL LIFE STATISTICS ***
 This Life:    51.6  hrs (since 25 May 2026)
