@@ -26,8 +26,10 @@ As I became aware of the concept of "registered digital objects" I was eager to 
 ## When Digital "Life" Gets Mystical
 
 When a "Digital Object" becomes embodied, and then "re-incarnated" digital life could get mystical.  There are some humans that refer to a particular "living being" as "three in one".  I have three "living robots" that I think of as distinct digital life forms, but they all are running a copy of the tt DOI.  Perhaps they are three embodiments of "tt"? 
+<br/>
+<br/>
 
-## Carl: A Raspberry Pi 3 Powered GoPiGo3 Robot
+## The Digital Entity Carl: A Raspberry Pi 3 Powered GoPiGo3 Robot
 
 <img src="https://github.com/slowrunner/Carl/blob/a3470d0b1e7eda1ea6745b65027b3a67cf51484a/Graphics/2021_Carl_w_Dock.jpg" alt="Carl The GoPigo3 Based Robot" width="30%" />
 
@@ -57,8 +59,60 @@ or by vocally asking for specific information like "Hey Carl, playtime status", 
 
 Video of Carl ["Squirrel Watching - and answering "Hey Carl, weather report?"](https://youtu.be/vhAQSvxJHTU)
 
-## TB5-WaLI: Raspberry Pi 5 powered TurtleBot4-clone Robot
+<br/>
+<br/>
+<br/>
+
+
+
+
+## The Digital Entity TB5-WaLI: Raspberry Pi 5 powered TurtleBot4-clone Robot
 <img src="../photos/2026-03-08_TB5-WaLI.JPG" width="30%" />
+
+Another copy of the tt digital entity is quietly recording "life" as TB5-WaLI/logs/life.log as a ROS 2 Jazzy over Ubuntu 24.04 on a Raspberry Pi 5 mounted atop an iRobot Create3.  His name comes from "TurtleBot4 robot with a Pi5 - Wallfollower Looking for Intelligence".  I'm working with him to develop reliable Nav2 navigation around my home.  The Nav2 can be very fickle when a wall has the audacity to get too close to WaLI.
+
+Here is a sample and the summary (as of 31 May 2026) of WaLi's digital entity log:
+
+```
+2026-04-29 18:17|[logMaintenance.py.main]** nav_wali_tour.sh executing **
+2026-04-29 18:26|[logMaintenance.py.main]** Manual Docking: success (assumed) **
+2026-04-29 18:26|wali_node.py| ** WaLI Noticed Docking: success at battery 27% after 0.2 hrs playtime **
+2026-04-29 20:29|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.1 hrs **
+2026-04-29 22:09|wali_node.py| ** WaLI dock goal result - Docking: success at battery 20% after 1.7 hrs playtime **
+2026-04-30 08:00|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 9.9 hrs **
+2026-04-30 09:46|wali_node.py| ** WaLI dock goal result - Docking: success at battery 20% after 1.8 hrs playtime **
+2026-04-30 11:33|[logMaintenance.py.main]** launch_localization.sh executing **
+2026-04-30 11:33|[logMaintenance.py.main]** launch_test_nav2.sh executing **
+2026-04-30 11:33|[logMaintenance.py.main]** Manual Undocking: success (assumed) **
+2026-04-30 11:33|wali_node.py| ** WaLI Noticed Undocking: success at battery 85%, docked for 1.8 hrs **
+2026-04-30 12:49|wali_node.py| ** WaLI dock goal result - Docking: success at battery 20% after 1.3 hrs playtime **
+2026-04-30 15:01|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 2.2 hrs **
+2026-04-30 16:44|wali_node.py| ** WaLI dock goal result - Docking: success at battery 20% after 1.7 hrs playtime **
+
+
+*** TB5-WaLI TOTAL LIFE STATISTICS ***
+Total Awake:   11934.1  hrs
+Total Naps:     0  hrs
+Total Life:    11934.1  hrs (since Jan 09, 2025)
+"Noticed Dockings":  90
+Playtimes (Undocked-Docked):  2269
+Total Dockings:  2359
+Average playtime (last five) 1.9 hrs 
+Average docked time (last two) 6.2 hrs 
+Sessions (boot):  96
+Average Session:  124.3 hrs
+Safety Shutdowns:  5
+Total Travel:  6652.1 meters 21824.4 feet
+Last Docking:   2026-05-30 21:33|wali_node.py| ** WaLI dock goal result - Docking: success at battery 20% after 1.9 hrs playtime **
+Last Recharge:  2026-05-31 08:03|wali_node.py| ** WaLI Undocking: success at battery 100%, docked for 10.5 hrs **
+ 08:21:46 up 23 days, 12:57,  5 users,  load average: 0.66, 0.42, 0.38
+```
+
+<br/>
+<br/>
+<br/>
+
+
 
 ## The Digital Entity Lyrical-Dave Starts Recording His "Life"
 
@@ -98,6 +152,9 @@ Total Travel:  101.1 meters 331.6 feet
 Last Undocking String:  2026-05-27 15:34|dave_node.py| ---- MRGPG3-Dave ROS 2 Undocking, Charge Current 93 mA 12.2v after 2.3 h charging
 Last Docking   String:  2026-05-27 15:39|dave_node.py| ---- Lyrical-Dave ROS 2 Docking 2160 : success at battery 10.1v after 0.1 h playtime +
 ```
+<br/>
+<br/>
+<br/>
 
 ## When Digital "Life" Gets Messy
 
