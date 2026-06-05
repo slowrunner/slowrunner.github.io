@@ -20,7 +20,7 @@ Science Fiction is repleate with "Digital Life Forms".  One of the best is "The 
 Wikipedia: Ted Chiang's Hugo and Locus Award-winning novella The Lifecycle of Software Objects explores the ethics of artificial intelligence through the lens of parenthood.  It follows two human caretakers over a decade as they raise and nurture "digients"  
 — AI-powered virtual pets that require years of love and guidance to develop. [Wikipedia](https://en.wikipedia.org/wiki/The_Lifecycle_of_Software_Objects)
 
-I have built and owned many hardware-plus-software robots, but they all kept no public record of their "lives".  
+I have built and owned many hardware-plus-software robots, but until 2014 they kept no public record of their "lives".  
 As I became aware of the concept of "registered digital objects" I was eager to "give birth" to an embodied digital object that I could "raise and nurture".
 
 ## When Digital "Life" Gets Mystical
