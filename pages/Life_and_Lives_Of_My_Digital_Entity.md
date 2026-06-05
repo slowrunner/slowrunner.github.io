@@ -8,7 +8,7 @@ Back on 14 June 2014, I created:
 - running on my laptop,  
 - ["published" on GitHub](https://github.com/slowrunner/tt),   
 - and registered "tt" for a "Digital Object Identifier": 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.808776.svg)](https://doi.org/10.5281/zenodo.808776)
+[![DOI](../photos/DOI_tt.jpg)](https://doi.org/10.5281/zenodo.808776)
 
 A DOI name is a digital identifier of an object, any object — physical, digital, or abstract. DOIs solve a common problem: keeping track of things.  Things can be matter, material, content, or activities.
 
